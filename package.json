@@ -1,0 +1,33 @@
+{
+  "name": "lib-react-gcommon",
+  "version": "0.2.0",
+  "description": "",
+  "author": "5h1ngy",
+  "license": "MIT",
+  "homepage": "https://github.com/5h1ngy/lib-react-gutils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5h1ngy/lib-react-gutils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/5h1ngy/lib-react-gutils/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "clean": "rm -rfdv node_modules/ lib/ .yarn/cache/ yarn.lock",
+    "help": "./node_modules/.bin/babel --help",
+    "build": "./node_modules/.bin/babel ./src --out-dir ./lib --config-file ./babel.config.js --copy-files",
+    "build:watch": "./node_modules/.bin/babel ./src --watch --source-maps --out-dir ./lib --config-file ./babel.config.js --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/plugin-transform-runtime": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/runtime-corejs3": "^7.23.2",
+    "core-js": "^3.33.2",
+    "lodash": "^4.17.21"
+  }
+}
