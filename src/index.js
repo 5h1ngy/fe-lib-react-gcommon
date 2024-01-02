@@ -1,9 +1,7 @@
 import { initGroups, initItems, move, reorder } from './dragging'
 
 import {
-    generateRandomString, parseSeason, parseStatusColor,
-    parseStatusLabel, parseTypesLabel, randomColorScheme,
-    translatePathNames
+    generateRandomString,
 } from './utils'
 
 export const toWatch = {
@@ -11,7 +9,5 @@ export const toWatch = {
 }
 
 export const utils = {
-    generateRandomString, parseSeason, parseStatusColor,
-    parseStatusLabel, parseTypesLabel, randomColorScheme,
-    translatePathNames
+    generateRandomString,
 }
