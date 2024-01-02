@@ -1,48 +1,48 @@
 import _ from 'lodash';
 
 /**
- * Genera una stringa casuale di una determinata lunghezza.
+ * Generates a random string of a specified length.
  *
- * @param {number} length La lunghezza della stringa casuale.
- * @returns {string} Una stringa casuale.
+ * @param {number} length - The length of the random string.
+ * @returns {string} - A random string.
  */
 export function generateRandomString(length = 8) {
     /**
-     * Inizializza la stringa casuale.
+     * Initialize the random string.
      */
     let result = "";
 
     /**
-     * Crea un array di tutti i caratteri ammessi.
+     * Create an array of all allowed characters.
      */
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
     /**
-     * Ottieni la lunghezza dell'array dei caratteri.
+     * Get the length of the characters array.
      */
     const charactersLength = characters.length;
 
     /**
-     * Inizializza un contatore.
+     * Initialize a counter.
      */
     let counter = 0;
 
     /**
-     * Genera la stringa casuale.
+     * Generate the random string.
      */
     while (counter < length) {
-        // Genera un indice casuale nell'array dei caratteri.
+        // Generate a random index in the characters array.
         const randomIndex = Math.floor(Math.random() * charactersLength);
 
-        // Aggiungi il carattere all'indice casuale alla stringa casuale.
+        // Add the character at the random index to the random string.
         result += characters.charAt(randomIndex);
 
-        // Incrementa il contatore.
+        // Increment the counter.
         counter += 1;
     }
 
     /**
-     * Restituisce la stringa casuale.
+     * Return the random string.
      */
     return result;
 }
