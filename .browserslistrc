@@ -1,2 +1,11 @@
+# file Browserslist configuration file for defining target browsers and Node.js versions.
+# see {@link https://github.com/browserslist/browserslist} for official Browserslist documentation.
+
+# Target browsers with usage greater than 0.25%.
 > 0.25%
+
+# Exclude browsers that are considered "dead".
 not dead
+
+# Target Node.js version 20.
+node 20
