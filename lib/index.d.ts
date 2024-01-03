@@ -1,14 +1,7 @@
-export namespace dragging {
-    export { initGroups };
-    export { initItems };
-    export { move };
-    export { reorder };
-}
-export namespace utils {
+declare namespace _default {
+    export { dragging };
     export { generateRandomString };
 }
-import { initGroups } from './dragging';
-import { initItems } from './dragging';
-import { move } from './dragging';
-import { reorder } from './dragging';
+export default _default;
+import * as dragging from './dragging';
 import { generateRandomString } from './utils';
