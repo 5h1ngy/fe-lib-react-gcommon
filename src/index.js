@@ -4,7 +4,7 @@ import {
     generateRandomString,
 } from './utils'
 
-export default {
+export {
     dragging,
     generateRandomString,
 }
