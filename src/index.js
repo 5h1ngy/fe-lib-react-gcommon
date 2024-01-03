@@ -4,7 +4,7 @@ import {
     generateRandomString,
 } from './utils'
 
-export const toWatch = {
+export const dragging = {
     initGroups, initItems, move, reorder
 }
 
