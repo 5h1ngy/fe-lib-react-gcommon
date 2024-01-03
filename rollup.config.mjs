@@ -11,17 +11,21 @@ import commonjs from '@rollup/plugin-commonjs';
  * @type {import('rollup').RollupOptions}
  */
 const config = {
-  // Entry point for the bundling process.
-  input: 'src/index.js',
+  // Entry points for the bundling process.
+  input: {
+    index: 'src/index.js',
+    dragging: 'src/dragging.js',
+    utils: 'src/utils.js',
+  },
 
   // Output configurations for the bundled files.
   output: [
     {
-      file: 'lib/index.cjs.js',
+      dir: 'lib',
       format: 'cjs',
     },
     {
-      file: 'lib/index.mjs',
+      dir: 'lib',
       format: 'esm',
     },
   ],

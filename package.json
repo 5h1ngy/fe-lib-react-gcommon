@@ -15,18 +15,21 @@
   "engines": {
     "node": ">=20"
   },
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.mjs",
+  "types": "lib/index.d.ts",
   "exports": {
     ".": {
       "import": "./lib/index.mjs",
       "require": "./lib/index.cjs.js"
     },
     "./dragging": {
-      "import": "./lib/dragging/index.mjs",
-      "require": "./lib/dragging/index.cjs.js"
+      "import": "./lib/dragging.mjs",
+      "require": "./lib/dragging.cjs.js"
     },
     "./utils": {
-      "import": "./lib/utils/index.mjs",
-      "require": "./lib/utils/index.cjs.js"
+      "import": "./lib/utils.mjs",
+      "require": "./lib/utils.cjs.js"
     }
   },
   "files": [
@@ -35,7 +38,7 @@
   "scripts": {
     "clean": "npx rimraf node_modules/ lib/ .yarn/cache/ yarn.lock",
     "help": "npx babel --help",
-    "build": "npx rollup --config rollup.config.mjs",
+    "build": "npx rollup --config rollup.config.mjs && npx tsc",
     "build:watch": "npx rollup --config rollup.config.mjs --watch"
   },
   "devDependencies": {
@@ -43,7 +46,6 @@
     "@babel/core": "^7.23.7",
     "@babel/plugin-transform-runtime": "^7.23.3",
     "@babel/preset-env": "^7.23.7",
-    "@babel/preset-typescript": "^7.23.3",
     "@babel/runtime-corejs3": "^7.23.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^25.0.7",
@@ -54,6 +56,7 @@
     "rollup": "^4.9.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^5.3.3"
   }
 }
