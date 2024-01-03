@@ -12,11 +12,7 @@ import commonjs from '@rollup/plugin-commonjs';
  */
 const config = {
   // Entry points for the bundling process.
-  input: {
-    index: 'src/index.js',
-    dragging: 'src/dragging.js',
-    utils: 'src/utils.js',
-  },
+  input: 'src/index.js',
 
   // Output configurations for the bundled files.
   output: [
