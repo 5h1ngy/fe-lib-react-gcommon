@@ -1,4 +1,4 @@
-import dragging from './dragging'
+import * as dragging from './dragging'
 
 import {
     generateRandomString,
