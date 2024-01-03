@@ -1,13 +1,10 @@
-import { initGroups, initItems, move, reorder } from './dragging'
+import dragging from './dragging'
 
 import {
     generateRandomString,
 } from './utils'
 
-export const dragging = {
-    initGroups, initItems, move, reorder
-}
-
-export const utils = {
+export default {
+    dragging,
     generateRandomString,
 }
