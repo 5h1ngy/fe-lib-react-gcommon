@@ -2,7 +2,7 @@
 node_modules/
 
 # Ignore built files
-lib/
+!lib/
 
 # Ignore yarn.lock file
 yarn.lock
