@@ -19,10 +19,12 @@ const config = {
     {
       dir: 'lib',
       format: 'cjs',
+      sourcemap: true,
     },
     {
       dir: 'lib',
       format: 'esm',
+      sourcemap: true,
     },
   ],
 
